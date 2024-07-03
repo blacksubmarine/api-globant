@@ -1,0 +1,79 @@
+{
+    "info": {
+      "_postman_id": "87f95f7e-4a0a-4c2d-8cc0-184b18f7f1ea",
+      "name": "FastAPI Testing",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Create Hired Employees",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"id\": 1,\n    \"name\": \"John Doe\",\n    \"hire_datetime\": \"2023-01-01T12:00:00\",\n    \"department_id\": 1,\n    \"job_id\": 1\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/hired_employees/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "hired_employees"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create Departments",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"id\": 1,\n    \"department\": \"IT\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/departments/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "departments"
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Create Jobs",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"id\": 1,\n    \"job\": \"Software Engineer\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/jobs/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "jobs"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
